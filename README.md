@@ -25,24 +25,24 @@ Basic Steps to Install the SmartThings Crestron API and Get it Working
 
 10)	Using the SmartThings App on your phone, Goto the marketplace and then select SmartApps.  
 
-11)	Scroll to the bottom of the screen and select My Apps.
+11)	Scroll to the bottom of the screen and select My Apps.  You should see the CrestronAPI Smart App Listed.  Click on it and use the displayed screen to enable your devices to send updates when your devices change state through the SmartApp
 
-12)	You should see the CrestronAPI Smart App Listed.  Click on it and use the displayed screen to enable your devices to send updates when your devices change state through the SmartApp
+IMPORTANT – ONCE YOU HAVE INSTALLED THE CrestronAPI SMART APP YOU SHOULD NEVER SELECT IT FROM THE MARKETPLACE AGAIN.  DOING SO WILL INSTALL MULTIPLE COPIES OF THE SMART APP AND CORRECTING THIS WILL REQUIRE A CALL TO SMARTTHINGS SUPPORT.  INSTEAD, YOU CAN ADD NEW DEVICES YOU INSTALL IN YOUR HOME TO THE CrestronAPI SMART APP SO THE NEW DEVICES WILL SEND UPDATES TO YOUR CRESTRON PROCESSOR BY SELECTING THE CrestronAPI SMART APP ON THE AUTOMATION TAB IN THE SMARTTHINGS APP.
 
-13)	Picking up on the SmartThings web site where you were on step 9, press the App Settings button at the top of the screen
+12)	Picking up on the SmartThings web site where you were on step 9, press the App Settings button at the top of the screen
 
-14)	Toward the bottom of the page click on OAuth
+13)	Toward the bottom of the page click on OAuth
 
-15)	Enable OAuth and copy down your Client ID and Secret ID
+14)	Enable OAuth and copy down your Client ID and Secret ID
 
-16)	Following the code in the example program add the SmartThings Receiver module to your program with the clientID and Secret ID from step 11 as parameters and the port from step 1 as a 3rd parameter.  Load the program to your processor
+15)	Following the code in the example program add the SmartThings Receiver module to your program with the clientID and Secret ID from step 11 as parameters and the port from step 1 as a 3rd parameter.  Load the program to your processor
 
-17)	Pulse the Startup Signal and then Pulse the Authenticate Signal.  
+16)	Pulse the Startup Signal and then Pulse the Authenticate Signal.  
 
-18)	Copy the url from the event log to your browser and use the displayed page to authorize your Crestron processor to access your devices
+17)	Copy the url from the event log to your browser and use the displayed page to authorize your Crestron processor to access your devices
 
-19)	Pulse the Print_Device_List signal on the Crestron SmartThings Receiver Module.  
+18)	Pulse the Print_Device_List signal on the Crestron SmartThings Receiver Module.  
 
-20)	Use the device ID's that are added to the error log to add SmartThings modules to your program to control your devices.  The device ID's need to be added as parameters to these modules.
+19)	Use the device ID's that are added to the error log to add SmartThings modules to your program to control your devices.  The device ID's need to be added as parameters to these modules.
 
-21)	You should now be able to control your SmartThings devices through your Crestron program and the outputs of the modules should reflect the state of the devices.  
+20)	You should now be able to control your SmartThings devices through your Crestron program and the outputs of the modules should reflect the state of the devices.  
